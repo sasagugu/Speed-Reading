@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <meta name="description" content="opis">
+        <meta name="Keywords" content="kljucne rijeci" />
+        
+        <!--Social media -->
+        <meta property="og:title" content="The best site">
+        <meta property="og:image" content="link_to_image">
+        <meta property="og:description" content="description goes here">
+
+        <meta name="author" content="Saša Gugunović">
+
+        <link rel="stylesheet" href="style.css">
+
+        
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b714fd63d8.js"></script>
+
+
+        <title>Speed Reading App | Free site to practice reading</title>
+    </head>
+    <body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="books">
+        <h1>Speed Reading</h1>
+    </div>
+</header>
+    <main>
+        <div class="data">
+            <textarea type="text" class="input" placeholder="Paste or type your text here"></textarea>
+            <div class="story">
+                <span>or select a story</span>
+                <select class="select" placehlder="Pick a book">
+                    <option value="An-Old-Man-Lived-in-the-Village">An Old Man Lived in the Village</option>
+                    <option value="The-Wise-Man">The Wise Man</option>
+                    <option value="The-Foolish-Donkey">The Foolish Donkey</option>
+                    <option value="Having-A-Best-Friend">Having A Best Friend</option>
+                    <option value="The-Greedy-Lion">The Greedy Lion</option>
+                    <option value="Two-Friends-&-The-Bear">Two Friends & The Bear</option>
+                    <option value="The-Fox-&-The-Grapes">The Fox & The Grapes</option>
+                    <option value="The-Lion-&-The-Poor-Slave">The Lion & The Poor Slave</option>
+                    <option value="The-Foolish-Donkey">The Foolish Donkey</option>
+                    <option value="na-drugoj-strani">Na Drugoj Strani</option>
+                    <option value="drevni-sanduk">Drevni Sanduk</option>
+                    <option value="ne-znam">Ne znam</option>
+
+
+                </select>
+            </div>
+            
+        </div>
+        
+        <div class="speed">
+            <p>Speed: </p>
+            <input type="number" class="number" min="1" max="10000">
+            <p>words per minute</p>
+        </div>        
+        <p class="vrijeme"></p>
+        <div class="app">
+
+            <div class="text">
+                <h1 class="display">Your text will appear here</h1>
+                <div class="box"></div>
+            </div>
+
+            <div class="controls">
+                <div class="controls__top">
+                    <button class="slover" onclick="slover()"><i class="fas fa-backward"></i> Slower</button>
+                    <button class="play" onclick="displayFunction()"><i class="fas fa-play-circle"></i>Start</button>
+                    <button class="pause" onclick="pause()" ><i class="fas fa-pause-circle"></i>Pause</button>
+                    <button class="faster" onclick="faster()">Faster <i class="fas fa-forward"></i></i></button>
+                </div>
+                <div class="cotrnols__bottom">
+                    <button class="goback" onclick="goback()"><i class="fas fa-fast-backward"></i></i>Go back 10 words</button>
+                    <button class="goback" onclick="goforward()">Go forward 10 words <i class="fas fa-fast-forward"></i></button>
+                </div>
+            </div>   
+
+        </div>        
+        
+        
+
+    </main>
+    <script src="script.js"></script>   
+
+    </body>
+</html>

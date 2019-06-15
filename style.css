@@ -1,0 +1,213 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+
+body{
+	box-sizing: border-box;
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.8rem;
+	display: flex;
+	justify-content: center;
+	margin: 2rem auto;
+	margin-top: 0;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	color: rgba(255,255,255,0.9);
+}
+
+.logo img {
+	width: 5rem;
+	height: 5rem;
+	margin-right: 1rem; 
+}
+
+header {
+	background: #221d1d;
+}
+
+
+.app{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.text {
+	font-size: 2.1rem;
+	width: 55rem;
+	height: 25rem;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position:relative;
+}
+
+.box {
+	position: absolute;
+	top: 50%;
+	left: 2.5rem;
+	transform: translateY(-50%);
+	width: 50rem;
+	height: 15rem;
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+}
+
+.box:before {
+	position:absolute;
+	content: '';
+	width: 2rem;
+	height:146px;
+	background: rgba(255,0,0,0.1);
+	top:0;
+	left: 24rem;
+}
+
+
+.cotrnols {
+
+}
+
+.controls__top {
+	display: flex;
+	justify-content: center;
+	margin-top:1rem;
+}
+
+.cotrnols__bottom{
+	display: flex;
+	justify-content: center;
+}
+
+
+button {
+	padding: 1rem 2rem;
+	color:white;
+	border:none;
+	background: #9f3b3b;
+	margin: 1rem;
+	font-size: 1.5rem;
+	transition: all .2s;
+	border: 2px solid transparent;
+}
+
+button:hover {
+	cursor: pointer;
+	color: #9f3b3b;
+	background: transparent;
+	border: 2px solid #9f3b3b;
+}
+
+.play, .pause {
+	margin: .2rem;
+	/*padding: 1rem 2rem;*/
+	font-size: 1.6rem;
+}
+
+.goback {
+	padding: .5rem 2rem;
+	margin: .2rem .2rem;
+}
+
+.goback:first-child{
+	margin-left: 1rem;
+	padding: .5rem 2.5rem;
+}
+
+.fas {
+	margin-right: 1rem;
+}
+
+.data {
+	display: flex;
+	justify-content: center;
+}
+
+.data span {
+	margin: 1rem;
+	margin-bottom: 0;
+	font-size: 1.6rem;
+
+}
+
+.speed {
+	width:50rem;
+	margin: 2rem auto;
+	display: flex;
+}
+
+
+.input {
+	width: 30rem;
+	max-width: 50rem
+	margin: 2rem;
+	height: 13rem;
+	font-family: 'Roboto', sans-serif;
+	padding: 1rem;
+
+}
+
+.select {
+	height: 2rem;
+	margin: 1rem;
+	margin-top: 0;
+	border:none;
+}
+
+.number {
+	width: 6rem;
+	font-size: 1.8rem;
+	padding-left: .5rem;
+}
+
+.speed p:last-child {
+	font-size: 1.6rem;
+	margin-left: 1rem;
+}
+
+.speed p:first-child {
+	font-size: 1.6rem;
+	margin-right: 1rem;
+}
+.story {
+	display: flex;
+	flex-direction: column;
+}
+
+.vrijeme {
+	width: 50rem;
+	margin: 0 auto;
+	font-size: 1.6rem;
+
+}
+
+body {
+	background: #e1e8ee;
+}
+
+input, textarea {
+	background: #c3c6c8;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+
+.fas {
+	font-size: 2.4rem;
+}
