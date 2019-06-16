@@ -62,9 +62,9 @@ numberSelector.addEventListener('change', function () {
 	brRijeci  = arr.length;
 	brMinuta = brRijeci / broj;
 	if (brMinuta < 1) {
-		vrijemeSelector.innerHTML = "Reading time less than a minute";
+		vrijemeSelector.innerHTML = "<i class=\"fas fa-clock\"></i> Reading time less than a minute";
 	}else{
-		vrijemeSelector.innerHTML = "Reading time ~ " + Math.round(brMinuta) + " minutes."
+		vrijemeSelector.innerHTML = "<i class=\"fas fa-clock\"></i> Reading time ~ " + Math.round(brMinuta) + " minutes."
 	}
 
 });
@@ -90,9 +90,9 @@ function faster () {
 
 		// Vrijeme citanja
 		if (brMinuta < 1) {
-			vrijemeSelector.innerHTML = "Reading time less than a minute";
+			vrijemeSelector.innerHTML = "<i class=\"fas fa-clock\"></i> Reading time less than a minute";
 		}else{
-			vrijemeSelector.innerHTML = "Reading time ~ " + Math.round(brMinuta) + " minutes."
+			vrijemeSelector.innerHTML = "<i class=\"fas fa-clock\"></i> Reading time ~ " + Math.round(brMinuta) + " minutes."
 		}
 
 	}else {
@@ -122,9 +122,9 @@ function slover () {
 
 		// Vrijeme citanja
 		if (brMinuta < 1) {
-			vrijemeSelector.innerHTML = "Reading time less than a minute";
+			vrijemeSelector.innerHTML = "<i class=\"fas fa-clock\"></i> Reading time less than a minute";
 		}else{
-			vrijemeSelector.innerHTML = "Reading time ~ " + Math.round(brMinuta) + " minutes."
+			vrijemeSelector.innerHTML = "<i class=\"fas fa-clock\"></i> Reading time ~ " + Math.round(brMinuta) + " minutes."
 		}
 	}else {
 		sloverSelector.disabled = true;

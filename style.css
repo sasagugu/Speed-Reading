@@ -196,6 +196,7 @@ button:hover {
 	width: 50rem;
 	margin: 0 auto;
 	font-size: 1.6rem;
+	color: rgba(0,0,0,0.5);
 
 }
 
@@ -204,10 +205,121 @@ body {
 }
 
 input, textarea {
-	background: #c3c6c8;
-	border: 1px solid rgba(0,0,0,0.1);
+	background: white;
+	border: none;
 }
 
 .fas {
 	font-size: 2.4rem;
+}
+
+
+.about {
+	width: 70rem;
+	margin: 5rem auto;
+	padding: 1rem;
+}
+
+@media(max-width: 700px) {
+	.about {
+		width: auto;
+	}
+}
+
+.about h1 {
+	font-size: 2.2rem;
+	font-weight: 100;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.about h2 {
+	font-size: 1.6rem;
+	font-weight: 100;
+
+}
+
+.about h3 {
+	font-weight: 300;
+	font-size: 1.6rem;
+}
+
+.about a {
+	text-decoration: none;
+	color: black;
+	padding: .5rem;
+	border-bottom: 1px solid black;
+}
+
+header h2 {
+	color: white;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 100;
+	margin-bottom: 1rem;
+	margin-top: -2rem;
+}
+
+footer {
+	width: 100%;
+	background: #221D1D;
+	margin-top: 2rem;
+	padding: 2rem;
+	color: white;
+	font-size: 1.6rem;
+}
+
+.footer {
+	width: 60rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media(max-width: 600px) {
+	.footer {
+		width: auto;
+	}
+}
+
+@media(max-width: 500px) {
+	.footer {
+		flex-direction: column;
+	}
+}
+
+.text-input p {
+	font-size: 1.7rem;
+	margin-top: .5rem;
+	margin-bottom: .4rem;
+}
+
+.fa-clock {
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+.left a, .right a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+	padding-bottom: .5rem;
+	border-bottom: 1px solid white; 
+}
+
+.left .fab {
+	font-size: 1.8rem;
+	margin-right: .5rem
+}
+
+.right .fas {
+	font-size: 1.8rem;
+	margin-right: .5rem;
+}
+
+@media(max-width: 500px) {
+	.right {
+		margin-top: 2rem;
+	}
 }
